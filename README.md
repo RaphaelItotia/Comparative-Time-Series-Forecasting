@@ -45,8 +45,11 @@ The primary goal is to create a model that captures trends and seasonality withi
 #### d). Deseasonalize Sales:
 - The sales data is divided by corresponding seasonal indices, removing the seasonal pattern and isolating the trend.
 ![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Deseasonalize.PNG)
-    
-#### e). Trend Analysis:
+
+#### e). Add a time variable
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Add_time.PNG)
+
+#### f). Trend Analysis:
 
 - Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as
   
@@ -62,13 +65,13 @@ where:
 Here, quadratic terms are avoided to maintain simplicity.
 ![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Trend.PNG)
     
-#### f). Forecast Calculation:
+#### g). Forecast Calculation:
 
 - Using the trend equation, we project future sales. These forecasted values are adjusted back by the seasonal indices for each quarter to account for seasonality.
 ![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Forecast.PNG)
 ![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Prediction.PNG)
 
-#### g). Visuals and Observations
+#### h). Visuals and Observations
 
 In Excel, line chart is created to compare actual vs. forecasted sales and display the trend line derived from the deseasonalized data.
 
@@ -101,6 +104,8 @@ $$ \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n (Actual-Forecasted)^2} $$
 $$ \text{MAPE} = \frac{1}{n} \sum_{i=1}^n \left| \frac{Actual-Forecasted}{Actual}\right| \times 100 $$
 
 I used both Excel and Python to calculate these metrics, providing side-by-side comparisons.
+
+![](assets/Accuracy.PNG)
 
 ---
 ## 7. Results Comparison
