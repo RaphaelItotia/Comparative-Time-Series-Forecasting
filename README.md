@@ -120,7 +120,9 @@ I used both Excel and Python to calculate these metrics, providing side-by-side 
 
 #### Discussion
 
-The results between Excel and Python closely match, indicating both tools effectively handle the data. Minor differences may be attributed to rounding. Excel is advantageous for simplicity and accessibility, while Python provides scalability and automation for larger datasets.
+The results between Excel and Python closely match, indicating both tools effectively handle the data. Minor differences may be attributed to rounding. 
+
+Excel is advantageous for simplicity and accessibility, while Python provides scalability and automation for larger datasets.
 
 ---
 ## 8. Conclusion
