@@ -25,6 +25,7 @@ The dataset consists of historical quarterly Product sales from 2021 to 2024.
 ### Purpose
 
 The primary goal is to create a model that captures trends and seasonality within the data to forecast future sales values. 
+
 ---
 ## 4. Excel Implementation
 ### Step-by-Step Process
@@ -49,6 +50,7 @@ The primary goal is to create a model that captures trends and seasonality withi
 - Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as
   
 $$ y = \beta_0 + \beta_1 x $$
+
 where: 
 - y is the dependent variable.
 - $ \beta_0 $ is the intercept.
@@ -65,6 +67,7 @@ Here, quadratic terms are avoided to maintain simplicity.
 #### g). Visuals and Observations
 
 In Excel, line chart is created to compare actual vs. forecasted sales and display the trend line derived from the deseasonalized data.
+
 ![]()
 ---
 ## 5. Python Implementation
@@ -92,6 +95,7 @@ $$ \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n (Actual-Forecasted)^2} $$
 $$ \text{MAPE} = \frac{1}{n} \sum_{i=1}^n \left| \frac{Actual-Forecasted}{Actual}\right| \times 100 $$
 
 I used both Excel and Python to calculate these metrics, providing side-by-side comparisons.
+
 ---
 ## 7. Results Comparison
 ### Excel vs. Python Accuracy Results
@@ -104,7 +108,9 @@ I used both Excel and Python to calculate these metrics, providing side-by-side 
 |MAPE	|2.439532841%	|2.4395328407222077%|
 
 #### Discussion
+
 The results between Excel and Python closely match, indicating both tools effectively handle the data. Minor differences may be attributed to rounding. Excel is advantageous for simplicity and accessibility, while Python provides scalability and automation for larger datasets.
+
 ---
 ## 8. Conclusion
 ### Key Findings
