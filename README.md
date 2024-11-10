@@ -3,8 +3,11 @@
 ![]()
 ## 1. Introduction
 ### Objective
+
 This project demonstrates the process of forecasting quarterly sales data for a Product in Murima SuperStores using two distinct tools; Excel and Python. It evaluates forecast accuracy through multiple metrics. The aim is to compare how each tool handles forecasting and accuracy analysis, highlighting strengths and limitations of each.
+
 ### Scope
+
 Time series forecasting is crucial in various industries for planning and decision-making, especially in sales and supply chain management. Understanding forecast accuracy helps determine the model's reliability. This project specifically focuses on four accuracy metrics:
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
@@ -20,6 +23,7 @@ The dataset consists of historical quarterly Product sales from 2021 to 2024.
 ---
 ## 3. Forecasting Approach
 ### Purpose
+
 The primary goal is to create a model that captures trends and seasonality within the data to forecast future sales values. 
 ---
 ## 4. Excel Implementation
@@ -41,7 +45,9 @@ The primary goal is to create a model that captures trends and seasonality withi
 ![]()
     
 #### e). Trend Analysis:
-- Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as 
+
+- Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as
+  
 $$ y = \beta_0 + \beta_1 x $$
 where: 
 - y is the dependent variable.
@@ -52,6 +58,7 @@ Here, quadratic terms are avoided to maintain simplicity.
 ![]()
     
 #### f). Forecast Calculation:
+
 - Using the trend equation, we project future sales. These forecasted values are adjusted back by the seasonal indices for each quarter to account for seasonality.
 ![]()
 
@@ -62,20 +69,26 @@ In Excel, line chart is created to compare actual vs. forecasted sales and displ
 ---
 ## 5. Python Implementation
 ### Steps in Python
+
 [Python code]()
 ---
 ## 6. Accuracy Metrics Calculation
 ### Purpose
+
 Accuracy metrics allow us to quantify how closely the forecasted values match the actual data, providing a reliable way to evaluate model performance.
+
 ### Accuracy Metrics:
 - **MAE (Mean Absolute Error)**: Measures average error in units.
   
 $$ \text{MAE} = \frac{1}{n} \sum_{i=1}^n |Actual-Forecasted| $$
 - **MSE (Mean Squared Error)**: Measures average squared error, emphasizing larger errors.
+- 
 $$ \text{MSE} = \frac{1}{n} \sum_{i=1}^n (Actual-Forecasted)^2 $$
 - **RMSE (Root Mean Squared Error)**: The square root of MSE, on the same scale as actual data.
+- 
 $$ \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^n (Actual-Forecasted)^2} $$
 - **MAPE (Mean Absolute Percentage Error)**: Measures error as a percentage, useful for comparing different datasets.
+- 
 $$ \text{MAPE} = \frac{1}{n} \sum_{i=1}^n \left| \frac{Actual-Forecasted}{Actual}\right| \times 100 $$
 
 I used both Excel and Python to calculate these metrics, providing side-by-side comparisons.
