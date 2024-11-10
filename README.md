@@ -54,7 +54,9 @@ $$ y = \beta_0 + \beta_1 x $$
 where: 
 - y is the dependent variable.
   
-  $ \beta_0 $ is the intercept.
+  $ \beta_0 $
+
+  is the intercept.
   
 - $ \beta_1 $  is the slope(coefficient) of the independent variable x.
   
