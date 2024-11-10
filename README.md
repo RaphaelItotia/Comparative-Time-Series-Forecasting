@@ -1,6 +1,6 @@
 # Comparative Time Series Forecasting and Accuracy Analysis Using Excel and Python
 -------
-![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Product_Head.png)
+![]()
 ## 1. Introduction
 ### Objective
 
@@ -31,19 +31,19 @@ The primary goal is to create a model that captures trends and seasonality withi
 ### Step-by-Step Process
 #### a). Moving Average (MA):
 - Calculated using a 4-quarter moving average. This smooths out short-term fluctuations.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/MA4.PNG)
 
 #### b). Centered Moving Average (CMA):
 - CMA is obtained by averaging pairs of MA values. It adjusts for timing differences, providing a baseline that balances the data around seasonal fluctuations.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/CMA.PNG)
     
 #### c). Seasonal Indices (SI):
 - Seasonal indices are calculated by dividing actual sales by CMA values for each quarter and averaging these ratios by quarter across multiple years.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/SI.PNG)
     
 #### d). Deseasonalize Sales:
 - The sales data is divided by corresponding seasonal indices, removing the seasonal pattern and isolating the trend.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Deseasonalize.PNG)
     
 #### e). Trend Analysis:
 
@@ -59,23 +59,25 @@ where:
 - $\beta_1$  is the slope(coefficient) of the independent variable x.
   
 Here, quadratic terms are avoided to maintain simplicity.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Trend.PNG)
     
 #### f). Forecast Calculation:
 
 - Using the trend equation, we project future sales. These forecasted values are adjusted back by the seasonal indices for each quarter to account for seasonality.
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Forecast.PNG)
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Prediction.PNG)
 
 #### g). Visuals and Observations
 
 In Excel, line chart is created to compare actual vs. forecasted sales and display the trend line derived from the deseasonalized data.
 
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Visualize.PNG)
+
 ---
 ## 5. Python Implementation
 ### Steps in Python
 
-[Python code]()
+[Python code](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Product_sales.ipynb)
 
 ---
 ## 6. Accuracy Metrics Calculation
