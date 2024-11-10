@@ -1,6 +1,6 @@
 # Comparative Time Series Forecasting and Accuracy Analysis Using Excel and Python
 -------
-![]()
+![](https://github.com/RaphaelItotia/Comparative-Time-Series-Forecasting/blob/main/assets/Product_Head.png)
 ## 1. Introduction
 ### Objective
 
