@@ -127,7 +127,9 @@ Excel is advantageous for simplicity and accessibility, while Python provides sc
 ---
 ## 8. Conclusion
 ### Key Findings
-This project demonstrates how Excel and Python can be used to forecast time series data and assess accuracy. Both tools are effective in capturing trends and seasonal effects, but Python offers more flexibility for advanced analysis and automation.
+This project demonstrates how Excel and Python can be used to forecast time series data and assess accuracy. 
+
+Both tools are effective in capturing trends and seasonal effects, but Python offers more flexibility for advanced analysis and automation.
 
 Tool Recommendations:
 - Excel: Suitable for small datasets and quick, hands-on analysis.
