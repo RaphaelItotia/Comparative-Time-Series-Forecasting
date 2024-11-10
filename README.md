@@ -25,23 +25,23 @@ The primary goal is to create a model that captures trends and seasonality withi
 ## 4. Excel Implementation
 ### Step-by-Step Process
 #### a). Moving Average (MA):
-	- Calculated using a 4-quarter moving average. This smooths out short-term fluctuations.
+- Calculated using a 4-quarter moving average. This smooths out short-term fluctuations.
 ![]()
 
 #### b). Centered Moving Average (CMA):
-	- CMA is obtained by averaging pairs of MA values. It adjusts for timing differences, providing a baseline that balances the data around seasonal fluctuations.
+- CMA is obtained by averaging pairs of MA values. It adjusts for timing differences, providing a baseline that balances the data around seasonal fluctuations.
 ![]()
     
 #### c). Seasonal Indices (SI):
-	- Seasonal indices are calculated by dividing actual sales by CMA values for each quarter and averaging these ratios by quarter across multiple years.
+- Seasonal indices are calculated by dividing actual sales by CMA values for each quarter and averaging these ratios by quarter across multiple years.
 ![]()
     
 #### d). Deseasonalize Sales:
-	- The sales data is divided by corresponding seasonal indices, removing the seasonal pattern and isolating the trend.
+- The sales data is divided by corresponding seasonal indices, removing the seasonal pattern and isolating the trend.
 ![]()
     
 #### e). Trend Analysis:
-	- Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as 
+- Linear regression is used to find a trend equation for the deseasonalized sales data. The model is fitted as 
 $$ y = \beta_0 + \beta_1 x $$
 where: 
 - y is the dependent variable.
@@ -52,10 +52,11 @@ Here, quadratic terms are avoided to maintain simplicity.
 ![]()
     
 #### f). Forecast Calculation:
-	- Using the trend equation, we project future sales. These forecasted values are adjusted back by the seasonal indices for each quarter to account for seasonality.
+- Using the trend equation, we project future sales. These forecasted values are adjusted back by the seasonal indices for each quarter to account for seasonality.
 ![]()
 
 #### g). Visuals and Observations
+
 In Excel, line chart is created to compare actual vs. forecasted sales and display the trend line derived from the deseasonalized data.
 ![]()
 ---
